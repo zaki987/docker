@@ -43,5 +43,7 @@ RUN apt-get update && apt-get install -y \
 	zlib1g-dev
 	
 RUN apt-get upgrade -y
+ENV USE_CCACHE=1
+ENV CCACHE_COMPRESSION=1
 ENV TZ=Asia/Kuala_Lumpur
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
