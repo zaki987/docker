@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM ubuntu:latest
 LABEL maintainer "z4nyx <z4nyx@outlook.com>"
 
 RUN apt-get update && apt-get install -y \
@@ -44,6 +44,7 @@ RUN apt-get update && apt-get install -y \
 	
 RUN apt-get upgrade -y
 ENV USE_CCACHE=1
-ENV CCACHE_COMPRESSION=1
+ENV CCACHE_COMPRESS=1
+ENV CCACHE_MAXSIZE=50G
 ENV TZ=Asia/Kuala_Lumpur
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
