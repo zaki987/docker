@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM semaphoreci/ubuntu:18.04
 LABEL maintainer "z4nyx <z4nyx@outlook.com>"
 
 # Malaysian timezone (GMT+8)	
