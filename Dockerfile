@@ -9,34 +9,55 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update -qq && \
     apt-get upgrade -y && \
     apt-get install --no-install-recommends -y \
-	gcc \
-	libc6-dev \
-	git \
-	gcc \
-	g++ \
-	gperf \
-	bison \
-	flex \
-	texinfo \
-	help2man \
-	make \
-	libncurses5-dev \
 	autoconf \
+	autogen \
 	automake \
+	autotools-dev \
+	bc \
+	binutils \
+	binutils-aarch64-linux-gnu \
+	binutils-arm-linux-gnueabi \
+	bison \
+	bzip2 \
+	ca-certificates \
+	cmake \
+	curl \
+	expect \
+	flex \
+	g++ \
+	gawk \
+	gcc \
+	git \
+	gnupg \
+	gperf \
+	help2man \
+	libc6-dev \
+	libelf-dev \
+	libgomp1-* \
+	liblz4-tool \
+	libncurses5-dev \
+	libssl-dev \
+	libstdc++6 \
 	libtool \
 	libtool-bin \
-	gawk \
-	wget \
-	bzip2 \
-	xz-utils \
-	unzip \
+	m4 \
+	make \
+	openssl \
+	ovmf \
 	patch \
+	pigz \
 	python3 \
-	libstdc++6 \
+	python \
+	rsync \
+	shtool \
 	subversion \
-	curl \
-	bc \
-	libssl-dev \
-	zip \
 	tar \
+	texinfo \
+	tzdata \
+	u-boot-tools \
+	unzip \
+	wget \
+	xz-utils \
+	zip \
+	zlib1g-dev \
 	zstd
