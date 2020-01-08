@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:focal
 LABEL maintainer "z4nyx <z4nyx@outlook.com>"
 
 # Malaysian timezone (GMT+8)	
