@@ -45,7 +45,6 @@ RUN apt-get update -qq && \
 	m4 \
 	make \
 	nano \
-	openjdk-11-jdk \
 	openssh-client \
 	openssl \
 	ovmf \
