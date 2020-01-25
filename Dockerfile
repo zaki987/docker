@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:buster-slim
 LABEL maintainer "z4nyx <z4nyx@outlook.com>"
 
 # Malaysian timezone (GMT+8)	
@@ -45,7 +45,7 @@ RUN apt-get update -qq && \
 	m4 \
 	make \
 	nano \
-	openjdk-8-jdk \
+	openjdk-11-jdk \
 	openssh-client \
 	openssl \
 	ovmf \
