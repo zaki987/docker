@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM debian:stable-slim
 LABEL maintainer "z4nyx <z4nyx@outlook.com>"
 
 # Malaysian timezone (GMT+8)	
@@ -20,6 +20,7 @@ RUN apt-get update -qq && \
 	bison \
 	bzip2 \
 	ca-certificates \
+	coreutils \
 	cmake \
 	curl \
 	expect \
@@ -31,6 +32,7 @@ RUN apt-get update -qq && \
 	gnupg \
 	gperf \
 	help2man \
+	lftp \
 	libc6-dev \
 	libelf-dev \
 	libgomp1-* \
@@ -42,6 +44,9 @@ RUN apt-get update -qq && \
 	libtool-bin \
 	m4 \
 	make \
+	nano \
+	openjdk-8-jdk \
+	openssh-client \
 	openssl \
 	ovmf \
 	patch \
