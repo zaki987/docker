@@ -1,5 +1,5 @@
-FROM ubuntu:eoan
-LABEL maintainer "z4nyx <z4nyx@outlook.com>"
+FROM ubuntu:bionic
+LABEL maintainer "Haikal Khairuddin <z4nyx@outlook.com>"
 
 # Malaysian timezone (GMT+8)	
 ENV TZ=Asia/Kuala_Lumpur
