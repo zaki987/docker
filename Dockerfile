@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:eoan
 LABEL maintainer "Haikal Khairuddin <z4nyx@outlook.com>"
 
 # Malaysian timezone (GMT+8)	
