@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:eoan
 LABEL maintainer "Haikal Khairuddin <z4nyx@outlook.com>"
 
 # Malaysian timezone (GMT+8)	
@@ -20,7 +20,7 @@ RUN apt-get update -qq && \
 	libssl-dev \
 	make \
 	openssl \
-	python3 \
+	python \
 	ssh \
 	wget \
 	zip \
