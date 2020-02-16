@@ -20,7 +20,7 @@ RUN apt-get update -qq && \
 	libssl-dev \
 	make \
 	openssl \
-	python \
+	python3 \
 	ssh \
 	wget \
 	zip \
