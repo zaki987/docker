@@ -6,22 +6,4 @@ ENV TZ=Asia/Kuala_Lumpur
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Tidy-up
-RUN apt-get update -qq && \
-    apt-get upgrade -y && \
-    apt-get install --no-install-recommends -y \
-	bc \
-	bison \
-	ca-certificates \
-	curl \
-	flex \
-	gcc \
-	git \
-	libc6-dev \
-	libssl-dev \
-	make \
-	openssl \
-	python \
-	ssh \
-	wget \
-	zip \
-	zstd
+RUN git clone https://github.com/akhilnarang/scripts && cd scripts && bash setup/android_build_env.sh
