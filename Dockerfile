@@ -6,4 +6,4 @@ ENV TZ=Asia/Kuala_Lumpur
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Tidy-up
-RUN git clone https://github.com/akhilnarang/scripts && cd scripts && bash setup/android_build_env.sh
+RUN apt install git && git clone https://github.com/akhilnarang/scripts && cd scripts && bash setup/android_build_env.sh
